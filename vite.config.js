@@ -8,6 +8,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   plugins: [vue(), vueDevTools()],
   base: '/fit5032_week12/',
+  define: {
+    'process.env': {},
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
