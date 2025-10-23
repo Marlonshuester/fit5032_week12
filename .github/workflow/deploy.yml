@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # 或 master，根据你仓库分支修改
+      - master
 
 permissions:
-  contents: write # 允许推送到 gh-pages 分支
+  contents: write
 
 jobs:
   build-and-deploy:
